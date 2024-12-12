@@ -1,16 +1,29 @@
-import Image from "next/image";
+// components
+import { Footer, Navbar } from "@/components";
 
-export default function Home() {
+// sections
+import Hero from "./hero";
+import Clients from "./clients";
+import Skills from "./skills";
+import Projects from "./projects";
+import Resume from "./resume";
+import Testimonial from "./testimonial";
+import PopularClients from "./popular-clients";
+import ContactForm from "./contact-form";
+
+export default function Portfolio() {
   return (
-    <div >
-
-
-      <h1 className=" bg-red-500 text-black font-bold text-4xl">
-        jojo,loar
-      </h1>
-      Hi
-
-
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Clients />
+      <Skills />
+      <Projects />
+      <Resume />
+      <Testimonial />
+      <PopularClients />
+      <ContactForm />
+      <Footer />
+    </>
   );
 }
