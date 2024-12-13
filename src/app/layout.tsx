@@ -1,38 +1,14 @@
-/* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout, FixedPlugin } from "@/components";
+import { HomeLayout, HomeLayoutMetaData } from "~/screens/home/home-layout";
+import { Metadata } from "next";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
 
-export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
-  description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
-};
+export const metadata: Metadata = HomeLayoutMetaData;
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children, }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <head>
-
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-      </head>
-      <body className={roboto.className}>
-        <Layout>
-          {children}
-          <FixedPlugin />
-        </Layout>
-      </body>
-    </html>
+    <HomeLayout>
+      {children}
+    </HomeLayout>
   );
 }

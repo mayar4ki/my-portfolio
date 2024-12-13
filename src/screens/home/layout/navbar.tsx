@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import {
   Navbar as MTNavbar,
@@ -53,7 +55,7 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
-export function Navbar() {
+export const Navbar = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
@@ -120,4 +122,3 @@ export function Navbar() {
   );
 }
 
-export default Navbar;
