@@ -49,9 +49,10 @@ const LIBS = [
   },
   {
     title: "Others",
-    values: ["tRPC", "Prisma", "Immer", "Rxjs"]
+    values: ["tRPC", "Immer", "Rxjs", "Git"]
   }
 ]
+const LIBS2 = ["Nginx", "Ngrok", "Docker", "CI/CD", "Express", "Prisma"];
 
 export function Tech() {
   return (
@@ -60,7 +61,7 @@ export function Tech() {
         <Typography variant="h5" color="blue-gray" className="mb-8">
           Frameworks That I've Used
         </Typography>
-        <div className="flex flex-wrap items-center justify-center gap-10">
+        <div className="flex flex-wrap items-center justify-center gap-10" data-aos="fade-up">
           {FRAMEWORKS.map((logo, key) => (
             <Image
               key={key}
@@ -78,7 +79,6 @@ export function Tech() {
           Libraries That I've Worked with
         </Typography>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 ">
-
           {LIBS.map(el => {
             return <ul key={el.title} className="list-disc xl:ml-16 sm:ml-10 flex flex-col justify-start items-start">
               <Typography variant="h6" className=" font-sans !text-gray-800 ">
@@ -93,8 +93,18 @@ export function Tech() {
 
             </ul>
           })}
-
         </div>
+        {/* <Typography variant="h6" color="blue-gray" className="mb-8 mt-4">
+          Things I'm Familiar with
+        </Typography>
+        <ul className="list-disc grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 gap-x-8  mx-4 sm:mx-14 lg:mx-20 ">
+          {LIBS2.map(subEl =>
+            <li key={subEl}  >
+              <Typography className=" self-end font-sans !text-gray-800 text-start ">
+                {subEl}
+              </Typography>
+            </li>)}
+        </ul> */}
         <Typography variant="h5" className="px-8 mt-8 font-sans !text-gray-800 ">
           And I am always open to learn more...
         </Typography>

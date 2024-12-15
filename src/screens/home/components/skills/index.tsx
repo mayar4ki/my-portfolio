@@ -54,22 +54,23 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase" data-aos="fade-up">
           about my skills
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4" data-aos="fade-up">
           What I do
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
+          data-aos="fade-up"
         >
           I&apos;m more than a developer, I&apos;m a digital artisan.
           Creating immersive online experiences is my passion and calling.
           Explore below to see how I can bring value to your team.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3" data-aos="zoom-in-up">
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

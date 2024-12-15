@@ -5,17 +5,17 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
+    img: "/image/copax.png",
     title: "Copax FLeet Management System",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
   {
-    img: "/image/blog2.svg",
+    img: "/image/web3.png",
     title: "U***PST Services store system, Stealth Startup",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
   },
   {
-    img: "/image/blog3.svg",
+    img: "/image/insurance.png",
     title: "Cl**r Medical Insurance System",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   }
@@ -36,7 +36,9 @@ export function Projects() {
           As a team player, I work collaboratively to achieve outstanding results.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3"
+        data-aos="zoom-in-up"
+      >
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}

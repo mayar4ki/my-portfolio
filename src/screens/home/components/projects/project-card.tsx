@@ -15,7 +15,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ img, title, desc }: ProjectCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
+    <Card color="transparent" shadow={false} className=" hover:scale-105 transition-all duration-300 ">
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
         <Image
           src={img}
@@ -24,6 +24,9 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
           height={768}
           className="h-full w-full object-cover"
         />
+        <div className=" absolute top-0 bottom-0 right-0  left-0 from-black to-transparent bg-gradient-to-b opacity-5 ">
+
+        </div>
       </CardHeader>
       <CardBody className="p-0">
         <a

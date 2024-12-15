@@ -12,12 +12,12 @@ const COMPANIES = [
 
 export function Companies() {
   return (
-    <section className="px-8 py-28">
+    <section className="px-8 py-28" data-aos="fade-up">
       <div className="container mx-auto text-center">
         <Typography variant="h6" color="blue-gray" className="mb-8">
           Awesome Companies That I've Worked With
         </Typography>
-        <div className="flex flex-wrap items-center justify-center gap-6">
+        <div className="flex flex-wrap items-center justify-center gap-6" >
           {COMPANIES.map((logo, key) => (
             <Image
               key={key}
