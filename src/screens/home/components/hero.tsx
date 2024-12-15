@@ -13,45 +13,30 @@ function Hero() {
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
-            Welcome to my Web <br /> Development Portofolio!
+            Hi!
+            Welcome to my Portofolio!
           </Typography>
           <Typography
             variant="lead"
-            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
+            className="mb-4 !text-gray-500"
           >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
-          </Typography>
-          <div className="grid">
-            <Typography
-              variant="small"
-              className="mb-2 text-gray-900 font-medium"
-            >
-              Your email
-            </Typography>
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              {/* @ts-ignore */}
-              <Input color="gray" label="Enter your email" size="lg" />
-              <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                require offer
-              </Button>
-            </div>
-          </div>
-          <Typography variant="small" className="font-normal !text-gray-500">
-            Read my{" "}
-            <a href="#" className="font-medium underline transition-colors">
-              Terms and Conditions
-            </a>
+            Senior Front-end Engineer with 5+ years of experience in web applications using <span className="font-bold text-gray-800">React, Next.js and React Native </span>
+            Eager to learn and stay updated with trends and best practices. Open-minded and collaborative in Problem-solving.
           </Typography>
         </div>
-        <Image
-          width={1024}
-          height={1024}
-          alt="team work"
-          src="/image/image-7.svg"
-          className="h-[36rem] w-full rounded-xl object-cover"
-        />
+
+        <div className=" flex justify-center items-center lg:justify-end    ">
+
+          <Image
+            width={576}
+            height={625}
+            alt="mayar deeb"
+            src="/image/mayar-deeb.jpg"
+            style={{ borderRadius: "1rem" }}
+            className=" rounded-xl  border-2 h-[25rem] sm:h-[36rem] lg:h-[36rem] object-cover  "
+          />
+        </div>
+
       </div>
     </header>
   );

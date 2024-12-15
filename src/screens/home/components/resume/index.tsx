@@ -4,23 +4,23 @@ import { Typography, Button } from "@material-tailwind/react";
 import {
   ChartBarIcon,
   PuzzlePieceIcon,
-  CursorArrowRaysIcon,
-  ArrowRightIcon,
+  CpuChipIcon,
+  ArrowRightIcon, LanguageIcon
 } from "@heroicons/react/24/solid";
 import { ResumeItem } from "./resume-item";
 
 const RESUME_ITEMS = [
   {
     icon: ChartBarIcon,
-    children: "Bachelor of Science in Computer Science",
+    children: "Bachelor of Engineering, Computer Software Engineering",
   },
   {
     icon: PuzzlePieceIcon,
-    children: "Certified Web Developer ",
+    children: "Amazon Web Services Cloud Practitioner Certification",
   },
   {
-    icon: CursorArrowRaysIcon,
-    children: "Frontend Framework Proficiency Certification",
+    icon: LanguageIcon,
+    children: "Arabic (Mother tongue) + English (Fluent)",
   },
 ];
 

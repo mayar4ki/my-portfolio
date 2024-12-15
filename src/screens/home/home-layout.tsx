@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto_Condensed, Roboto } from "next/font/google";
 import { ThemeProvider } from "~/providers/theme-provider";
 
 
-const roboto = Roboto({
+const roboto = Roboto_Condensed({
     subsets: ["latin"],
     weight: ["300", "400", "500", "700", "900"],
     display: "swap",

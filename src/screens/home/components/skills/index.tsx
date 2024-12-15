@@ -16,37 +16,37 @@ const SKILLS = [
     icon: RectangleGroupIcon,
     title: "Frontend Web Development:",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
+      "I specialize in creating beautiful and functional web experiences is my specialty. Utilizing the latest technologies and best practices, I design and build websites that captivate and engage users.",
   },
   {
     icon: FingerPrintIcon,
     title: "Mobile App Development",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      "I develop responsive and user-friendly mobile applications that run smoothly on both iOS and Android. I can manage every phase of the development process.",
   },
   {
     icon: SwatchIcon,
     title: "Technology Stack",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, TypeScript, and frameworks like React, Next.js, and React Native.",
   },
   {
     icon: HashtagIcon,
     title: " Web Optimization",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+      "Performance is crucial. I optimize websites and apps for maximum speed, providing users with a fast and responsive experience. This not only enhances user satisfaction but also improves SEO rankings.",
   },
   {
     icon: EyeIcon,
-    title: "User-Centric Design",
+    title: "UI/UX Design",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "I care about the user experience, and I make sure that the UI/UX is intuitive and easy to use. collaborating with the designer is the key",
   },
   {
     icon: DocumentTextIcon,
     title: "Testing and Quality Assurance",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "I test and debug applications to guarantee a bug-free and secure environment for users. I use Jest, Playwright, cucumber, and cypress.",
   },
 ];
 
@@ -55,7 +55,7 @@ export function Skills() {
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          my skills
+          about my skills
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
           What I do
@@ -64,9 +64,9 @@ export function Skills() {
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
         >
-          I&apos;m not just a developer; I&apos;m a digital dreamweaver.
-          Crafting immersive online experiences is not just a job but my
-          calling. Discover below how I can help you.
+          I&apos;m more than a developer, I&apos;m a digital artisan.
+          Creating immersive online experiences is my passion and calling.
+          Explore below to see how I can bring value to your team.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">

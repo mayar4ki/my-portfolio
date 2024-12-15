@@ -12,7 +12,6 @@ import {
   RectangleStackIcon,
   UserCircleIcon,
   CommandLineIcon,
-  Squares2X2Icon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
@@ -55,7 +54,7 @@ function NavItem({ children, href }: NavItemProps) {
   );
 }
 
-export const Navbar = () => {
+export const Header = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen((cur) => !cur);
@@ -68,10 +67,10 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold">
-          Material Tailwind
+          MAYAR DEEB
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
