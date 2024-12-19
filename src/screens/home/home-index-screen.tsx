@@ -14,7 +14,6 @@ import Tech from "./components/tech";
 export const HomeIndexScreen = () => {
     return (
         <>
-            <Header />
             <Hero />
             <Companies />
             <Skills />
@@ -23,7 +22,6 @@ export const HomeIndexScreen = () => {
             <Resume />
             <Testimonial />
             <ContactForm />
-            <Footer />
         </>
     );
 }

@@ -52,7 +52,8 @@ const SKILLS = [
 
 export function Skills() {
   return (
-    <section className="px-8">
+    <section className="px-8" >
+      <a id="skills" className=" relative -top-24 invisible "></a>
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase" data-aos="fade-up">
           about my skills
@@ -70,7 +71,7 @@ export function Skills() {
           Explore below to see how I can bring value to your team.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3" data-aos="zoom-in-up">
+      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3" >
         {SKILLS.map((props, idx) => (
           <SkillCard key={idx} {...props} />
         ))}

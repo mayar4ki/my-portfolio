@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed, Roboto } from "next/font/google";
 import { ThemeProvider } from "~/providers/theme-provider";
+import { Header } from "./layout/header";
+import { Footer } from "./layout/footer";
 const roboto = Roboto_Condensed({
     subsets: ["latin"],
     weight: ["300", "400", "500", "700", "900"],
@@ -25,7 +27,9 @@ export const HomeLayout = ({
             </head>
             <body className={roboto.className}>
                 <ThemeProvider>
+                    <Header />
                     {children}
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>

@@ -23,7 +23,8 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="py-28 px-8">
+    <section className="py-28 px-8" >
+      <a id="projects" className=" relative -top-24 invisible"></a>
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
           Projects  I&apos;m Proud Of
@@ -37,7 +38,7 @@ export function Projects() {
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3"
-        data-aos="zoom-in-up"
+        data-aos="fade-up"
       >
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />

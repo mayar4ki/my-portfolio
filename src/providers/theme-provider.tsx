@@ -12,7 +12,12 @@ theme.rating.defaultProps.unratedIcon = null;
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+            offset: 150,
+            duration: 600,
+            easing: 'ease-in-sine',
+            delay: 100,
+        });
         return () => { }
     })
     return <MaterialThemeProvider>{children}</MaterialThemeProvider>;

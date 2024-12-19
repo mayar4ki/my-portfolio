@@ -15,20 +15,23 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Projects",
     icon: RectangleStackIcon,
+    href: "projects"
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Docs",
+    name: "Skills",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "skills"
+  },
+  {
+    name: "Contact",
+    icon: UserCircleIcon,
+    href: 'contact'
   },
 ];
 
@@ -42,8 +45,7 @@ function NavItem({ children, href }: NavItemProps) {
     <li>
       <Typography
         as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
+        href={`/#${href}`}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -69,9 +71,11 @@ export const Header = () => {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
-          MAYAR DEEB
-        </Typography>
+        <Link href="/">
+          <Typography color="blue-gray" className="text-lg font-bold" >
+            MAYAR DEEB
+          </Typography>
+        </Link>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
