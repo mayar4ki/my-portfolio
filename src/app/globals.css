@@ -9,3 +9,8 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: transparent !important;
+}

@@ -1,6 +1,7 @@
+import { CopaxIndexScreen } from "~/screens/project/copax/copax-index-screen";
 
 export default function Page() {
     return (
-        <div>hi</div>
+        <CopaxIndexScreen />
     );
 }

@@ -6,14 +6,16 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
+  href: string;
 }
 
-export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
   return (
     <Card color="transparent" shadow={false} className=" hover:scale-105 transition-all duration-300 ">
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
@@ -40,9 +42,12 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button color="gray" size="sm">
-          see details
-        </Button>
+
+        <Link href={href}>
+          <Button color="gray" size="sm">
+            see details
+          </Button>
+        </Link>
       </CardBody>
     </Card>
   );

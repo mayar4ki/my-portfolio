@@ -8,16 +8,20 @@ const PROJECTS = [
     img: "/image/copax.png",
     title: "Copax FLeet Management System",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    href: '/project/copax'
   },
   {
     img: "/image/web3.png",
     title: "U***PST Services store system, Stealth Startup",
     desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    href: '/project/u___pst'
+
   },
   {
     img: "/image/insurance.png",
     title: "Cl**r Medical Insurance System",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    href: '/project/cl__r'
   }
 ];
 

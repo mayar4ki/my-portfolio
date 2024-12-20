@@ -69,8 +69,8 @@ export const Header = () => {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
+    <MTNavbar shadow={false} fullWidth className=" sticky top-0 z-50 border-0 border-b border-blue-gray-100  ">
+      <div className="container mx-auto flex items-center justify-between py-0.5">
         <Link href="/">
           <Typography color="blue-gray" className="text-lg font-bold" >
             MAYAR DEEB
@@ -84,12 +84,7 @@ export const Header = () => {
             </NavItem>
           ))}
         </ul>
-        <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
-          </a>
-        </div>
+
         <IconButton
           variant="text"
           color="gray"
