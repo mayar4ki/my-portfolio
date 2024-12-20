@@ -1,6 +1,7 @@
+import { U___pstIndexScreen } from "~/screens/project/u___pst/u___pst-index-screen";
 
 export default function Page() {
     return (
-        <div>u***pst</div>
+        <U___pstIndexScreen />
     );
 }

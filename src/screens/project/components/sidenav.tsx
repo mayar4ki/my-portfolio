@@ -62,7 +62,7 @@ export const Sidenav = ({ routes }: SidenavProps) => {
             </aside> */}
 
             <aside
-                className={`fixed lg:sticky top-0 z-[999] h-screen w-80 pb-4 pr-4 transition-all duration-300  lg:left-0 lg:top-16 lg:z-10 lg:w-56 ${mobileNav ? "left-0" : "-left-96"
+                className={`fixed  lg:sticky top-0 z-[999] h-screen w-80 pb-4 pr-4 transition-all duration-300  lg:left-0 lg:top-16 lg:z-10 lg:w-56 ${mobileNav ? "left-0" : "-left-96"
                     }`}
             >
                 <div
@@ -73,7 +73,7 @@ export const Sidenav = ({ routes }: SidenavProps) => {
                         }`}
                 />
 
-                <div className="fixed  top-0 z-[9999] h-screen  w-80 overflow-y-scroll  !bg-white pb-6 pl-6 lg:relative lg:w-56 lg:bg-transparent  lg:pt-0">
+                <div className="fixed  border-r border-blue-gray-100 top-0 z-[9999] h-screen  w-80 overflow-y-scroll  !bg-white pb-6 pl-6 lg:relative lg:w-56 lg:bg-transparent  lg:pt-0">
                     <div className="mb-24 mt-6">
                         {routes.map(({ name, pages }, key): any => (
                             <div key={key}>
@@ -84,7 +84,7 @@ export const Sidenav = ({ routes }: SidenavProps) => {
                                     {name}
                                 </Typography>
                                 <ul className="py-2">
-                                    {pages.map(({ name, route, label }: any, key) => {
+                                    {pages.map(({ name, route }: any, key) => {
 
                                         return (
                                             <li
@@ -93,38 +93,7 @@ export const Sidenav = ({ routes }: SidenavProps) => {
                                             >
                                                 <Typography
                                                     as={'a'}
-                                                    href="#"
-                                                    variant="small"
-                                                    className={'relative list-item w-full py-1 capitalize transition-colors hover:text-primary'}
-                                                    onClick={() => setMobileNav(false)}
-                                                >
-                                                    {name}
-                                                </Typography>
-                                            </li>
-                                        );
-                                    })}
-                                </ul>
-                            </div>
-                        ))}
-                        {routes.map(({ name, pages }, key): any => (
-                            <div key={key}>
-                                <Typography
-                                    variant="small"
-                                    className="font-bold capitalize text-primary"
-                                >
-                                    {name}
-                                </Typography>
-                                <ul className="py-2">
-                                    {pages.map(({ name, route, label }: any, key) => {
-
-                                        return (
-                                            <li
-                                                key={key}
-                                                className={key === pages.length - 1 ? "!mb-4" : ""}
-                                            >
-                                                <Typography
-                                                    as={'a'}
-                                                    href="#"
+                                                    href={route}
                                                     variant="small"
                                                     className={'relative list-item w-full py-1 capitalize transition-colors hover:text-primary'}
                                                     onClick={() => setMobileNav(false)}

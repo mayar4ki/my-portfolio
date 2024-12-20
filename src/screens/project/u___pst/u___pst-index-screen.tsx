@@ -30,7 +30,7 @@ const routes = [
     }];
 
 
-export const CopaxIndexScreen = () => {
+export const U___pstIndexScreen = () => {
 
     return (
         <div className="flex flex-row ">

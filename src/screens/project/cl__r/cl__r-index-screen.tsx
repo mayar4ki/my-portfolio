@@ -30,7 +30,7 @@ const routes = [
     }];
 
 
-export const CopaxIndexScreen = () => {
+export const Cl__rIndexScreen = () => {
 
     return (
         <div className="flex flex-row ">

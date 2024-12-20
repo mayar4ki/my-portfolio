@@ -1,20 +1,7 @@
-import React from "react";
+import { Cl__rIndexScreen } from "~/screens/project/cl__r/cl__r-index-screen";
 
-
-
-
-export default function Page({ }) {
-
-    const [mobileNav, setMobileNav] = React.useState(false);
-
-
-
-
+export default function Page() {
     return (
-        <>
-
-        </>
+        <Cl__rIndexScreen />
     );
 }
-
-
