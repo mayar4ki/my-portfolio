@@ -7,20 +7,20 @@ const PROJECTS = [
   {
     img: "/image/copax.png",
     title: "Copax FLeet Management System",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    desc: "Fleet management and tracking system, Allow you to track and control your vehicles in real-time. Provide all kinds of reports and analysis.",
     href: '/project/copax'
   },
   {
     img: "/image/web3.png",
     title: "U***PST Services store system, Stealth Startup",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    desc: "Service e-commerce platform that allows users to buy and sell services while focusing on anonymity and privacy.",
     href: '/project/u___pst'
 
   },
   {
     img: "/image/insurance.png",
     title: "Cl**r Medical Insurance System",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    desc: "Medical insurance system that help patient and clinic to manage their business and make it easy to manage the insurance process.",
     href: '/project/cl__r'
   }
 ];

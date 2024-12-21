@@ -22,7 +22,7 @@ export const Footer = () => {
             </a>
             .
           </Typography>
-          <ul className="flex gap-8 items-center">
+          <ul className="flex gap-8 items-center flex-wrap justify-center">
             {LINKS.map(({ name, href }) => (
               <li key={name}>
                 <Typography
