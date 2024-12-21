@@ -26,10 +26,10 @@ export const HomeLayout = ({
             <head>
                 <link rel="website icon" href="/favicon.ico" type="image/png" />
 
-                <meta property="og:title" content={HomeLayoutMetaData.title} />
+                <meta property="og:title" content={HomeLayoutMetaData.title as string} />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="image/mayar-deeb.jpg" />
-                <meta property="og:description" content={HomeLayoutMetaData.description} />
+                <meta property="og:description" content={HomeLayoutMetaData.description as string} />
 
             </head>
             <body className={roboto.className}>
