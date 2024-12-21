@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mayar4ki.github.io/my-protfolio",
+  "homepage": "https://mayar4ki.github.io/my-portfolio",
   "name": "meta-cortex-xi",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
