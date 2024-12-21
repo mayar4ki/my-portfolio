@@ -12,8 +12,8 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Disable default image optimization
   },
   reactStrictMode: true,
-  assetPrefix: isProd ? 'https://mayar4ki.github.io/my-portfolio/' : '',
-  basePath: isProd ? 'https://mayar4ki.github.io/my-portfolio' : '',
+  assetPrefix: isProd ? '/my-portfolio/' : '',
+  basePath: isProd ? '/my-portfolio' : '',
   output: 'export'
 
 };
