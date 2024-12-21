@@ -4,8 +4,11 @@ import { Typography, Button } from "@material-tailwind/react";
 const LINKS = [
   { name: "Github", href: "https://github.com/mayar4ki" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/mayar-i-deeb/" },
+  { name: "Telegram", href: "https://t.me/M9321m" },
+  { name: "WhatsApp", href: "https://wa.me/971568129757?text=Hey%20Mayar%20how%20you%20doing" },
   { name: "Instagram", href: "https://www.instagram.com/mayar.alideeb/" },
-  { name: "Blog", href: "https://dev.to/chrollo4ki" }
+  { name: "Dev.to", href: "https://dev.to/chrollo4ki" },
+  { name: "Medium", href: "https://medium.com/@mayardeeb" }
 ];
 const CURRENT_YEAR = new Date().getFullYear();
 

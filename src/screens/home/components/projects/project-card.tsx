@@ -17,8 +17,8 @@ interface ProjectCardProps {
 
 export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
   return (
-    <Card color="transparent" shadow={false} className=" hover:scale-105 transition-all duration-300 ">
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+    <Card color="transparent" shadow={false}>
+      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48  hover:scale-105 transition-all duration-300 ">
         <Image
           src={img}
           alt={title}
@@ -30,6 +30,7 @@ export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
 
         </div>
       </CardHeader>
+
       <CardBody className="p-0">
         <a
           href="#"
@@ -43,11 +44,16 @@ export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
           {desc}
         </Typography>
 
-        <Link href={href}>
+
+        {href ? <Link href={href}>
           <Button color="gray" size="sm">
             see details
           </Button>
-        </Link>
+        </Link> :
+          <Button disabled color="gray" size="sm">
+            Coming Soon
+          </Button>}
+
       </CardBody>
     </Card>
   );

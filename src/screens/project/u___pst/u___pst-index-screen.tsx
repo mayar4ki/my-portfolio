@@ -11,12 +11,12 @@ const routes = [
                 route: "#introduction",
             },
             {
-                name: "Main Features",
-                route: "#features",
+                name: "Coin Mixing/tumbling",
+                route: "#mixing",
             },
             {
-                name: "Multi Maps",
-                route: "#multi-maps",
+                name: "Next",
+                route: "#next",
             },
             {
                 name: "Tech-Stack",
@@ -35,13 +35,13 @@ export const U___pstIndexScreen = () => {
     return (
         <div className="flex flex-row ">
             <Sidenav routes={routes} />
-            <div className="px-4 lg:px-20 py-8 w-full flex flex-col justify-start items-start max-w-5xl border  ">
-                <h2 className="text-blue-gray-500 text-4xl font-bold">Copax Fleet Management System</h2>
+            <div className="px-4 lg:px-20 py-8 w-full flex flex-col justify-start items-start max-w-5xl border-r  ">
+                <h2 className="text-blue-gray-500 text-4xl font-bold">U___PST</h2>
 
                 <div className=" relative mt-10  rounded-lg overflow-hidden ">
                     <Image
-                        alt="copax"
-                        src={"/image/copax.png"}
+                        alt="web3"
+                        src={"/image/block.png"}
                         width={768}
                         height={768}
                         className=" object-cover"
@@ -51,72 +51,61 @@ export const U___pstIndexScreen = () => {
 
                 <div className="mt-10">
                     <a id="introduction" className=" relative -top-24 invisible"></a>
-                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Introduction</h2>
+                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Introduction#</h2>
                     <p className="text-blue-gray-500 mt-2">
-                        Copax FMS, a high-performance fleet management system utilizing cutting-edge technology, empowers businesses of all sizes to optimize operations, achieve peak performance, and gain complete control through real-time tracking, insightful data analytics, route optimization, driver behavior monitoring, and preventative maintenance - all from a user-friendly platform for increased efficiency, reduced costs, improved safety, and informed decision-making.
+                        The general idea of the app is to build an e-commerce that ensure anonymity and privacy. <br />
+                        The app is built with the latest technology to ensure the best user experience and security, we hide identity of the users by our mixing service.<br />
+                        we use crypto for payment so repeating a process from same wallet address is not a problem.
                     </p>
                 </div>
 
                 <div className="mt-10">
                     <a id="features" className=" relative -top-24 invisible"></a>
-                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Main Features</h2>
-                    <ul className="text-blue-gray-500 mt-2">
-                        <li>GPS Tracking</li>
-                        <li>Real-Time Vehicle Tracking</li>
-                        <li>Route History And Playback</li>
-                        <li>Geofencing</li>
-                        <li>Drivers Management </li>
-                        <li>Cost Management </li>
-                        <li>Rent Management </li>
-                        <li>Accidents </li>
-                        <li>Generate Reports </li>
-                        <li>Mobile App</li>
-                    </ul>
+                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Coin Mixing/tumbling#</h2>
+
+                    <p className="text-blue-gray-500 mt-2">
+                        the system has it's own coin mixer, a coin mixer is a service that mixes your coins with or without other users coins
+                        so that it becomes difficult to trace the origin, even if you are using coins tracer. <br />
+                        in addition to that, we add a cross-chain swap, which is a way to exchange
+                        cryptocurrencies between different blockchains without needing a middleman. <br />
+                        we did it differently, we add a useless cross-chain swap logic to some of the transactions as a mislead, sometimes do it for real.
+                        so that it becomes impossible to trace the origin of the coins.
+                        also, we use AI to build the transaction path so no one can trace where your funds came from or where they’re going.
+
+                        <br />
+                        different amounts, different times, different addresses, different blockchains, different coins, different logic, different everything.
+                        <br />
+                        Last thing the more gas-fee and time you put in the more anonymity you get. the process could take up to month if you want.
+                    </p>
                 </div>
 
+                <div className="mt-10">
+                    <a id="next" className=" relative -top-24 invisible"></a>
+                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Next#</h2>
+                    <p className="text-blue-gray-500 mt-2">
+                        Unfortunately the project did not published but it was a stunning idea and I'm proud to be part of it.<br />
+                        Every thing was tested and worked perfectly, Production Ready. <br />
 
-
-
-                <div className="mt-10 flex flex-col justify-start items-start">
-                    <a id="multi-maps" className=" relative -top-24 invisible"></a>
-                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Multi Maps</h2>
-
-                    <div className=" relative mt-4  rounded-lg overflow-hidden ">
-                        <Image
-                            alt="copax"
-                            src={"/projects/copax/maps.png"}
-                            width={768}
-                            height={768}
-                            className=" object-cover"
-                        />
-                        <div className=" absolute top-0 bottom-0 right-0  left-0 from-black to-transparent bg-gradient-to-b opacity-5 " />
-                    </div>
-
-                    <p className="text-blue-gray-500 mt-8">
-                        Enabled dynamic switching between map providers without disrupting the user experience.
-                        Users can easily toggle between different maps to access various features and data sets.
-                        <br />
-                        We know that some countries block some map providers so we support all of them.
-                        <br />
                     </p>
 
                 </div>
 
                 <div className="mt-10">
                     <a id="tech-stack" className=" relative -top-24 invisible"></a>
-                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Tech-Stack</h2>
+                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Tech-Stack#</h2>
                     <ul className="text-blue-gray-500 mt-2">
-                        <li>Nest.js</li>
-                        <li>React</li>
-                        <li>Flutter</li>
-                        <li>Turbo repo</li>
+                        <li>Next.js</li>
+                        <li>React native expo</li>
+                        <li>tRPC</li>
+                        <li>Clerk Auth</li>
+                        <li>T3 Turbo repo</li>
                     </ul>
                 </div>
 
                 <div className="mt-10">
                     <a id="know-more" className=" relative -top-24 invisible"></a>
-                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Know More</h2>
-                    <a href="https://copax-fms.com/" target="_blank">Visit Copax Website</a>
+                    <h2 className="text-blue-gray-500 text-2xl font-bold" >Know More#</h2>
+                    <a href="#" target="_blank">Visit Website</a>
                 </div>
             </div>
         </div >

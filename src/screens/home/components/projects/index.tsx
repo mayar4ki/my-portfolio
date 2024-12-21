@@ -22,12 +22,18 @@ const PROJECTS = [
     title: "Cl**r Medical Insurance System",
     desc: "Medical insurance system that help patient and clinic to manage their business and make it easy to manage the insurance process.",
     href: '/project/cl__r'
+  },
+  {
+    img: "/image/deckgl.png",
+    title: "Map Master",
+    desc: "Open-Sourced project that gives you the ability to use multiple 2D and 3D maps in one place using Deck.gl and Mapbox, Google maps, OpenStreetMap,2Gis and more.",
+    href: ''
   }
 ];
 
 export function Projects() {
   return (
-    <section className="py-28 px-8" >
+    <section className="pt-28 pb-14 px-8" >
       <a id="projects" className=" relative -top-24 invisible"></a>
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">

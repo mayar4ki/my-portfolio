@@ -2,15 +2,9 @@
 
 import {
   Typography,
-  Card,
-  CardBody,
-  Radio,
-  Input,
-  Textarea,
-  Button,
-  IconButton,
+  Card
 } from "@material-tailwind/react";
-import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, PhoneIcon, ChatBubbleBottomCenterIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
 
 export function ContactForm() {
   return (
@@ -18,13 +12,13 @@ export function ContactForm() {
       <a id="contact" className=" relative -top-24 invisible  "></a>
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          Contact Us
+          Contact Me
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full lg:w-5/12 !text-gray-500"
         >
-          Ready to get started? Feel free to reach out through the contact form,
+          Ready to get started? Feel free to reach out,
           and let&apos;s embark on a journey of innovation and success.
         </Typography>
       </div>
@@ -42,38 +36,36 @@ export function ContactForm() {
               variant="lead"
               className="mx-auto mb-8 text-base !text-gray-500"
             >
-              Fill up the form and our Team will get back to you within 24
-              hours.
+              Message me a message and I'll get back to you within 24 hours. Probably less !!
             </Typography>
 
 
             <div className="flex gap-10 flex-wrap justify-start items-center">
 
-              <div className="flex gap-5">
+              <div className="flex gap-5 justify-start items-center">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <Typography variant="h6" color="white">
-                  +1(424) 535 3523
+                  +971 56 812 9757
                 </Typography>
               </div>
-              <div className="flex  gap-x-5">
+              <div className="flex gap-5 justify-start items-center">
+                <ChatBubbleBottomCenterIcon className="h-6 w-6 text-white" />
+                <Typography as='a' href="https://t.me/M9321m" target="_blank" variant="h6" color="white">
+                  Telegram
+                </Typography>
+              </div>
+              <div className="flex gap-5 justify-start items-center">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
-                <Typography variant="h6" color="white">
-                  hello@mail.com
+                <Typography as='a' href="mailto:mayar.i.deeb@gmail.com" variant="h6" color="white">
+                  mayar.i.deeb@gmail.com
                 </Typography>
               </div>
-              <div className="flex gap-5">
-                <PhoneIcon className="h-6 w-6 text-white" />
-                <Typography variant="h6" color="white">
-                  +1(424) 535 3523
+              <div className="flex gap-5 justify-start items-center">
+                <GlobeAltIcon className="h-6 w-6 text-white" />
+                <Typography as='a' href="https://www.linkedin.com/in/mayar-i-deeb/" target="_blank" variant="h6" color="white">
+                  LinkedIn
                 </Typography>
               </div>
-              <div className="flex  gap-5">
-                <EnvelopeIcon className="h-6 w-6 text-white" />
-                <Typography variant="h6" color="white">
-                  hello@mail.com
-                </Typography>
-              </div>
-
             </div>
 
 
