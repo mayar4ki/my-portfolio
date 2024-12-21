@@ -18,7 +18,7 @@ export interface SidenavProps {
 
 
 export const Sidenav = ({ routes }: SidenavProps) => {
-    const [mobileNav, setMobileNav] = React.useState(true);
+    const [mobileNav, setMobileNav] = React.useState(false);
 
     return (
         <>
@@ -34,8 +34,8 @@ export const Sidenav = ({ routes }: SidenavProps) => {
 
             <div
                 onClick={() => setMobileNav(true)}
-                className=" flex items-center lg:hidden
-           px-4 py-2 gap-2 rounded-e-lg shadow-md
+                className=" flex items-center lg:hidden 
+           px-2 py-2 gap-2 rounded-e-lg shadow-md
          fixed top-24 left-0 bg-white z-50 border border-blue-gray-100">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,9 +51,6 @@ export const Sidenav = ({ routes }: SidenavProps) => {
                         d="M4 6h16M4 12h16M4 18h7"
                     />
                 </svg>
-                <Typography variant="paragraph" className=" text-blue-gray-700">
-                    Menu
-                </Typography>
             </div>
 
 
