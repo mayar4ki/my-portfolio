@@ -10,7 +10,10 @@ const roboto = Roboto_Condensed({
 });
 
 export const HomeLayoutMetaData: Metadata = {
-    title: "Mayar Deeb Portfolio"
+    title: "Mayar Deeb Senior Front end developer",
+    description: "Senior Front-end Developer with experience building and maintaining web applications using various technologies and frameworks.",
+    keywords: "Senior Front end developer, React, Nextjs, React native, Web development, Hire Mayar Deeb",
+    authors: { name: "Mayar Deeb", url: "https://www.linkedin.com/in/mayar-i-deeb/" },
 };
 
 export const HomeLayout = ({
@@ -21,7 +24,13 @@ export const HomeLayout = ({
     return (
         <html lang="en">
             <head>
-                <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+                <link rel="website icon" href="/favicon.ico" type="image/png" />
+
+                <meta property="og:title" content={HomeLayoutMetaData.title} />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="image/mayar-deeb.jpg" />
+                <meta property="og:description" content={HomeLayoutMetaData.description} />
+
             </head>
             <body className={roboto.className}>
                 <ThemeProvider>
