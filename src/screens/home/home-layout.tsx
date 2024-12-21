@@ -10,9 +10,7 @@ const roboto = Roboto_Condensed({
 });
 
 export const HomeLayoutMetaData: Metadata = {
-    title: "Next.js + Tailwind Portfolio Page",
-    description:
-        "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    title: "Mayar Deeb Portfolio"
 };
 
 export const HomeLayout = ({
