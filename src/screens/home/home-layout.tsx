@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
-import { Roboto_Condensed, Roboto } from "next/font/google";
+import { Roboto, Roboto_Mono } from "next/font/google";
 import { ThemeProvider } from "~/providers/theme-provider";
 import { Header } from "./layout/header";
 import { Footer } from "./layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
-const roboto = Roboto_Condensed({
+const font = Roboto({
     subsets: ["latin"],
     weight: ["300", "400", "500", "700", "900"],
+    display: "swap",
+});
+
+const font2 = Roboto_Mono({
+    subsets: ["latin"],
+    weight: ["400"],
     display: "swap",
 });
 
@@ -35,7 +41,7 @@ export const HomeLayout = ({
                 <meta property="og:description" content={HomeLayoutMetaData.description as string} />
 
             </head>
-            <body className={roboto.className}>
+            <body className={font.className + font2.className} >
                 <ThemeProvider>
                     <Header />
                     {children}
