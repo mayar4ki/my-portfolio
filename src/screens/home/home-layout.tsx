@@ -3,6 +3,8 @@ import { Roboto_Condensed, Roboto } from "next/font/google";
 import { ThemeProvider } from "~/providers/theme-provider";
 import { Header } from "./layout/header";
 import { Footer } from "./layout/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const roboto = Roboto_Condensed({
     subsets: ["latin"],
     weight: ["300", "400", "500", "700", "900"],
@@ -38,6 +40,7 @@ export const HomeLayout = ({
                     {children}
                     <Footer />
                 </ThemeProvider>
+                <SpeedInsights dsn="y8NAEPFx4PlNkGL3teb0vSDzKuR" />
             </body>
         </html>
     );

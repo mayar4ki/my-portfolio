@@ -12,16 +12,16 @@ const PROJECTS = [
   },
   {
     img: "/image/web3.png",
-    title: "U***PST Services store system, Stealth Startup",
+    title: "Stealth Startup Services store",
     desc: "Service e-commerce platform that allows users to buy and sell services while focusing on anonymity and privacy.",
-    href: '/project/u___pst'
+    href: '/project/stealth-startup'
 
   },
   {
     img: "/image/insurance.png",
-    title: "Cl**r Medical Insurance System",
+    title: "Alternativa Medical Insurance System",
     desc: "Medical insurance system that help patient and clinic to manage their business and make it easy to manage the insurance process.",
-    href: '/project/cl__r'
+    href: '/project/alternativa'
   },
   {
     img: "/image/deckgl.png",

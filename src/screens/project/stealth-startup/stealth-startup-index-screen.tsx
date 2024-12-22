@@ -30,13 +30,13 @@ const routes = [
     }];
 
 
-export const U___pstIndexScreen = () => {
+export const StealthStartupIndexScreen = () => {
 
     return (
         <div className="flex flex-row ">
             <Sidenav routes={routes} />
             <div className="px-4 lg:px-20 py-8 w-full flex flex-col justify-start items-start max-w-5xl border-r  ">
-                <h2 className="text-blue-gray-500 text-4xl font-bold">U___PST</h2>
+                <h2 className="text-blue-gray-500 text-4xl font-bold">Stealth Startup Services store</h2>
 
                 <div className=" relative mt-10  rounded-lg overflow-hidden ">
                     <Image
