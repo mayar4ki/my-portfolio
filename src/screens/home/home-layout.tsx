@@ -4,6 +4,7 @@ import { ThemeProvider } from "~/providers/theme-provider";
 import { Header } from "./layout/header";
 import { Footer } from "./layout/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const roboto = Roboto_Condensed({
     subsets: ["latin"],
@@ -41,6 +42,7 @@ export const HomeLayout = ({
                     <Footer />
                 </ThemeProvider>
                 <SpeedInsights dsn="y8NAEPFx4PlNkGL3teb0vSDzKuR" />
+                <Analytics />
             </body>
         </html>
     );
