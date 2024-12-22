@@ -5,7 +5,7 @@ import { Typography } from "@material-tailwind/react";
 
 function Hero() {
   return (
-    <header className="bg-white p-8">
+    <header className=" p-8">
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <Typography
@@ -18,7 +18,7 @@ function Hero() {
           </Typography>
           <Typography
             variant="lead"
-            className="mb-4 !text-gray-500"
+            className="mb-4 !text-gray-600"
           >
             Senior Front-end Engineer with 5+ years of experience in web applications using <span className="font-bold text-gray-800">React, Next.js and React Native </span>
             Eager to learn and stay updated with trends and best practices. Open-minded and collaborative in Problem-solving.

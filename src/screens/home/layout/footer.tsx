@@ -40,9 +40,11 @@ export const Footer = () => {
               </li>
             ))}
 
-            <a href="mailto:mayar.i.deeb@gmail.com">
-              <Button color="gray">Send EMail</Button>
-            </a>
+            <li>
+              <a href="mailto:mayar.i.deeb@gmail.com">
+                <Button color="gray">Send EMail</Button>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

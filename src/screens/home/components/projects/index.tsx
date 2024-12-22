@@ -41,7 +41,7 @@ export function Projects() {
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-8/12"
+          className="mx-auto w-full px-4 font-normal !text-gray-600 lg:w-8/12"
         >
           I&apos;m here to bring your web/mobile app ideas to life or give your it a fresh look.
           As a team player, I work collaboratively to achieve outstanding results.

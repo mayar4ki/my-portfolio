@@ -16,7 +16,7 @@ export function ContactForm() {
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full lg:w-5/12 !text-gray-500"
+          className="mx-auto w-full lg:w-5/12 !text-gray-600"
         >
           Ready to get started? Feel free to reach out,
           and let&apos;s embark on a journey of innovation and success.

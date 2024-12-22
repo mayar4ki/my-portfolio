@@ -79,32 +79,24 @@ export function Tech() {
           Libraries That I've Worked with
         </Typography>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 ">
+
           {LIBS.map(el => {
-            return <ul key={el.title} className="list-disc xl:ml-16 sm:ml-10 flex flex-col justify-start items-start">
+            return <div key={el.title} className=" flex flex-col xl:ml-16 sm:ml-10 justify-start items-start" >
               <Typography variant="h6" className=" font-sans !text-gray-800 ">
                 {el.title} :
               </Typography>
+              <ul className="list-disc  flex flex-col justify-start items-start">
+                {el.values.map(subEl => <li key={subEl} className="ml-4">
+                  <Typography className=" font-sans !text-gray-800 ">
+                    {subEl}
+                  </Typography>
+                </li>)}
 
-              {el.values.map(subEl => <li key={subEl} className="ml-4">
-                <Typography className=" font-sans !text-gray-800 ">
-                  {subEl}
-                </Typography>
-              </li>)}
+              </ul>
+            </div>
 
-            </ul>
           })}
         </div>
-        {/* <Typography variant="h6" color="blue-gray" className="mb-8 mt-4">
-          Things I'm Familiar with
-        </Typography>
-        <ul className="list-disc grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 gap-x-8  mx-4 sm:mx-14 lg:mx-20 ">
-          {LIBS2.map(subEl =>
-            <li key={subEl}  >
-              <Typography className=" self-end font-sans !text-gray-800 text-start ">
-                {subEl}
-              </Typography>
-            </li>)}
-        </ul> */}
         <Typography variant="h5" className="px-8 mt-8 font-sans !text-gray-800 ">
           And I am always open to learn more...
         </Typography>

@@ -32,7 +32,7 @@ export function Resume() {
           <Typography variant="h2" color="blue-gray">
             My Resume
           </Typography>
-          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
+          <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-600">
             Highly skilled and creative Web Developer with 5+ years of
             experience in crafting visually stunning and functionally robust
             websites and web applications.

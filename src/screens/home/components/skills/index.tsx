@@ -63,7 +63,7 @@ export function Skills() {
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
+          className="mx-auto w-full !text-gray-600 lg:w-10/12"
           data-aos="fade-up"
         >
           I&apos;m more than a developer, I&apos;m a digital artisan.
