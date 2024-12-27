@@ -19,7 +19,7 @@ const font2 = Roboto_Mono({
 });
 
 export const HomeLayoutMetaData: Metadata = {
-    title: "Mayar Deeb Senior Front end developer",
+    title: "Mayar Deeb",
     description: "Senior Front-end Developer with experience building and maintaining web applications using various technologies and frameworks.",
     keywords: "Senior Front end developer, React, Nextjs, React native, Web development, Hire Mayar Deeb",
     authors: { name: "Mayar Deeb", url: "https://www.linkedin.com/in/mayar-i-deeb/" },
