@@ -12,15 +12,15 @@ const PROJECTS = [
   },
   {
     img: "/image/web3.png",
-    title: "Stealth Startup Services store",
+    title: "Stealth Startup, Services store",
     desc: "Service e-commerce platform that allows users to buy and sell services while focusing on anonymity and privacy.",
     href: '/project/stealth-startup'
 
   },
   {
     img: "/image/insurance.png",
-    title: "Alternativa Medical Insurance System",
-    desc: "Medical insurance system that help patient and clinic to manage their business and make it easy to manage the insurance process.",
+    title: "Clomr, Boost Anesthesia Revenue",
+    desc: "Built for Anesthesia Groups and Billing Service Providers to streamline the entire anesthesia workflow.",
     href: '/project/alternativa'
   },
   {
@@ -36,7 +36,7 @@ export function Projects() {
     <section className="pt-28 pb-14 px-8" >
       <a id="projects" className=" relative -top-24 invisible"></a>
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <Typography color="blue-gray" className="mb-4 font-semibold text-4xl">
           Projects  I&apos;m Proud Of
         </Typography>
         <Typography

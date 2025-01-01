@@ -9,16 +9,14 @@ function Hero() {
       <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
         <div className="row-start-2 lg:row-auto">
           <Typography
-            variant="h1"
             color="blue-gray"
-            className="mb-4 lg:text-5xl !leading-tight text-3xl"
+            className="mb-4 lg:text-5xl !leading-tight text-3xl font-medium"
           >
-            Hi!
             Welcome to my Portofolio!
           </Typography>
           <Typography
-            variant="lead"
-            className="mb-4 !text-gray-600"
+            variant="h1"
+            className="mb-4 !text-gray-600 text-xl font-normal "
           >
             Senior Front-end Engineer with 5+ years of experience in web applications using <span className="font-bold text-gray-800">React, Next.js and React Native </span>
             Eager to learn and stay updated with trends and best practices. Open-minded and collaborative in Problem-solving.
@@ -26,7 +24,6 @@ function Hero() {
         </div>
 
         <div className=" flex justify-center items-center lg:justify-end    ">
-
           <Image
             width={576}
             height={625}

@@ -11,7 +11,8 @@ export function ContactForm() {
     <section className="px-8 py-12" >
       <a id="contact" className=" relative -top-24 invisible  "></a>
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+
+        <Typography color="blue-gray" className="mb-4 text-5xl font-semibold">
           Contact Me
         </Typography>
         <Typography
@@ -29,7 +30,7 @@ export function ContactForm() {
           
           
           ">
-            <Typography variant="h4" color="white" className="mb-2">
+            <Typography color="white" className="mb-2 font-semibold text-2xl">
               Contact Information
             </Typography>
             <Typography
@@ -39,30 +40,29 @@ export function ContactForm() {
               Message me a message and I'll get back to you within 24 hours. Probably less !!
             </Typography>
 
-
             <div className="flex gap-10 flex-wrap justify-start items-center">
 
               <div className="flex gap-5 justify-start items-center">
                 <PhoneIcon className="h-6 w-6 text-white" />
-                <Typography variant="h6" color="white">
+                <Typography color="white" className=" text-md font-medium ">
                   +971 56 812 9757
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
                 <ChatBubbleBottomCenterIcon className="h-6 w-6 text-white" />
-                <Typography as='a' href="https://t.me/M9321m" target="_blank" variant="h6" color="white">
+                <Typography as='a' href="https://t.me/M9321m" target="_blank" color="white" className=" text-md font-medium ">
                   Telegram
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
-                <Typography as='a' href="mailto:mayar.i.deeb@gmail.com" variant="h6" color="white">
+                <Typography as='a' href="mailto:mayar.i.deeb@gmail.com" color="white" className=" text-md font-medium ">
                   mayar.i.deeb@gmail.com
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
                 <GlobeAltIcon className="h-6 w-6 text-white" />
-                <Typography as='a' href="https://www.linkedin.com/in/mayar-i-deeb/" target="_blank" variant="h6" color="white">
+                <Typography as='a' href="https://www.linkedin.com/in/mayar-i-deeb/" target="_blank" color="white" className=" text-md font-medium ">
                   LinkedIn
                 </Typography>
               </div>

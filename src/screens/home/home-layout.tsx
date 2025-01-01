@@ -19,7 +19,7 @@ const font2 = Roboto_Mono({
 });
 
 export const HomeLayoutMetaData: Metadata = {
-    title: "Mayar Deeb",
+    title: "Mayar Deeb, Senior Front-end Developer in Dubai",
     description: "Senior Front-end Developer with experience building and maintaining web applications using various technologies and frameworks.",
     keywords: "Senior Front end developer, React, Nextjs, React native, Web development, Hire Mayar Deeb",
     authors: { name: "Mayar Deeb", url: "https://www.linkedin.com/in/mayar-i-deeb/" },
@@ -34,7 +34,7 @@ export const HomeLayout = ({
         <html lang="en">
             <head>
                 <link rel="website icon" href="/favicon.ico" type="image/png" />
-
+                <link rel="canonical" href="https://www.mayar-deeb.dev" />
                 <meta property="og:title" content={HomeLayoutMetaData.title as string} />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="image/mayar-deeb.jpg" />

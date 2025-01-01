@@ -58,7 +58,7 @@ export function Tech() {
   return (
     <section className="px-8 py-12">
       <div className="container mx-auto text-center">
-        <Typography variant="h5" color="blue-gray" className="mb-8">
+        <Typography color="blue-gray" className="mb-8 text-xl font-semibold">
           Frameworks That I've Used
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-10" data-aos="fade-up">
@@ -75,14 +75,14 @@ export function Tech() {
         </div>
       </div>
       <div className="container mx-auto text-center pt-12 ">
-        <Typography variant="h6" color="blue-gray" className="mb-8">
+        <Typography color="blue-gray" className="mb-8 font-semibold text-lg ">
           Libraries That I've Worked with
         </Typography>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-4 ">
 
           {LIBS.map(el => {
             return <div key={el.title} className=" flex flex-col xl:ml-16 sm:ml-10 justify-start items-start" >
-              <Typography variant="h6" className=" font-sans !text-gray-800 ">
+              <Typography className=" font-sans !text-gray-800 font-semibold text-md ">
                 {el.title} :
               </Typography>
               <ul className="list-disc  flex flex-col justify-start items-start">
@@ -97,7 +97,7 @@ export function Tech() {
 
           })}
         </div>
-        <Typography variant="h5" className="px-8 mt-8 font-sans !text-gray-800 ">
+        <Typography className="px-8 mt-8 font-sans !text-gray-800  font-semibold text-xl">
           And I am always open to learn more...
         </Typography>
       </div >

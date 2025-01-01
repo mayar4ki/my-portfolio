@@ -36,7 +36,7 @@ export const AlternativaIndexScreen = () => {
         <div className="flex flex-row ">
             <Sidenav routes={routes} />
             <div className="px-4 lg:px-20 py-8 w-full flex flex-col justify-start items-start max-w-5xl border-r  ">
-                <h2 className="text-blue-gray-500 text-4xl font-bold">Alternativa Medical Insurance System</h2>
+                <h2 className="text-blue-gray-500 text-4xl font-bold">Clomr, Boost Anesthesia Revenue</h2>
                 <div className=" relative mt-10  rounded-lg overflow-hidden ">
                     <Image
                         alt="insurance"
@@ -64,6 +64,9 @@ export const AlternativaIndexScreen = () => {
                         According to my NDA I can't share the features of the app.
                         Instead I'll be talking about the dev challenges that I can share.
                     </p>
+
+                    <a href="https://www.clomr.com/" target="_blank" className="underline text-blue-800">You can find their website here</a>
+
                 </div>
 
                 <div className="mt-10 flex flex-col w-full  ">
@@ -297,7 +300,7 @@ selected={value}
                 <div className="mt-10">
                     <a id="know-more" className=" relative -top-24 invisible"></a>
                     <h2 className="text-blue-gray-500 text-2xl font-bold" >Know More</h2>
-                    <a href="#" className="underline text-blue-800">Visit Website</a>
+                    <a href="https://www.clomr.com/" target="_blank" className="underline text-blue-800">Visit Website</a>
                 </div>
             </div>
         </div >
