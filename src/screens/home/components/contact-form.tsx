@@ -6,6 +6,11 @@ import {
 } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, ChatBubbleBottomCenterIcon, GlobeAltIcon } from "@heroicons/react/24/solid";
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGoogle, faTelegram } from '@fortawesome/free-brands-svg-icons'
+
+
 export function ContactForm() {
   return (
     <section className="px-8 py-12" >
@@ -26,10 +31,7 @@ export function ContactForm() {
       <div>
         <Card shadow={true} className="container mx-auto ">
           <div className="w-full rounded-lg h-full py-8 p-5 md:p-14
-          bg-gray-900
-          
-          
-          ">
+          bg-gray-900  ">
             <Typography color="white" className="mb-2 font-semibold text-2xl">
               Contact Information
             </Typography>
@@ -49,19 +51,19 @@ export function ContactForm() {
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
-                <ChatBubbleBottomCenterIcon className="h-6 w-6 text-white" />
+                <FontAwesomeIcon icon={faTelegram} size='lg' className=" text-white" />
                 <Typography as='a' href="https://t.me/M9321m" target="_blank" color="white" className=" text-md font-medium ">
                   Telegram
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
-                <EnvelopeIcon className="h-6 w-6 text-white" />
+                <FontAwesomeIcon icon={faGoogle} size='lg' className=" text-white" />
                 <Typography as='a' href="mailto:mayar.i.deeb@gmail.com" color="white" className=" text-md font-medium ">
                   mayar.i.deeb@gmail.com
                 </Typography>
               </div>
               <div className="flex gap-5 justify-start items-center">
-                <GlobeAltIcon className="h-6 w-6 text-white" />
+                <FontAwesomeIcon icon={faLinkedin} size='lg' className=" text-white" />
                 <Typography as='a' href="https://www.linkedin.com/in/mayar-i-deeb/" target="_blank" color="white" className=" text-md font-medium ">
                   LinkedIn
                 </Typography>
