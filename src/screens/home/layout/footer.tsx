@@ -1,18 +1,8 @@
 "use client";
-import { faTelegram, faGithub, faLinkedin, faWhatsapp, faInstagram, faDev, faMedium } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Typography, Button } from "@material-tailwind/react";
+import { Typography } from "@material-tailwind/react";
+import { CURRENT_YEAR, MY_NAME, SOCIAL_LINKS } from "~/constants";
 
-const LINKS = [
-  { name: "Github", href: "https://github.com/mayar4ki", icon: faGithub },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/mayar-i-deeb/", icon: faLinkedin },
-  { name: "Telegram", href: "https://t.me/M9321m", icon: faTelegram },
-  { name: "WhatsApp", href: "https://wa.me/971568129757?text=Hey%20Mayar%20how%20you%20doing", icon: faWhatsapp },
-  { name: "Instagram", href: "https://www.instagram.com/mayar.alideeb/", icon: faInstagram },
-  { name: "Dev.to", href: "https://dev.to/chrollo4ki", icon: faDev },
-  { name: "Medium", href: "https://medium.com/@mayardeeb", icon: faMedium }
-];
-const CURRENT_YEAR = new Date().getFullYear();
 
 export const Footer = () => {
   return (
@@ -23,12 +13,12 @@ export const Footer = () => {
             &copy; {CURRENT_YEAR}{" "}
             by{" "}
             <a href="https://www.linkedin.com/in/mayar-i-deeb/" target="_blank">
-              Mayar Deeb
+              {MY_NAME}
             </a>
             .
           </Typography>
           <ul className="flex gap-8 items-center flex-wrap justify-center">
-            {LINKS.map(({ name, href, icon }) => (
+            {SOCIAL_LINKS.map(({ name, href, icon }) => (
               <li key={name} >
                 <Typography
                   as="a"
@@ -42,12 +32,6 @@ export const Footer = () => {
                 </Typography>
               </li>
             ))}
-
-            <li>
-              <a href="mailto:mayar.i.deeb@gmail.com">
-                <Button color="gray">Send EMail</Button>
-              </a>
-            </li>
           </ul>
         </div>
       </div>

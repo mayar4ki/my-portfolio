@@ -36,4 +36,7 @@ declare module "@material-tailwind/react" {
     export interface CardBodyProps extends EventCapture {
         placeholder?: unknown;
     }
+    export interface TextareaProps extends EventCapture {
+        placeholder?: unknown;
+    }
 }

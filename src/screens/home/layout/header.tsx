@@ -15,6 +15,7 @@ import {
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 import Link from "next/link";
+import { MY_NAME } from "~/constants";
 
 const NAV_MENU = [
   {
@@ -73,8 +74,8 @@ export const Header = () => {
     <MTNavbar shadow={false} fullWidth className=" sticky top-0 z-50 border-0 border-b border-blue-gray-100  ">
       <div className="container mx-auto flex items-center justify-between py-0.5">
         <Link href="/">
-          <Typography color="blue-gray" className="text-lg font-bold" >
-            MAYAR DEEB
+          <Typography color="blue-gray" className="text-lg font-bold uppercase" >
+            {MY_NAME}
           </Typography>
         </Link>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">

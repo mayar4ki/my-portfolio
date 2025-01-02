@@ -3,17 +3,19 @@
 import { z } from 'zod'
 import { Resend } from 'resend';
 import { EmailTemplate } from '~/components/EmailTemplate';
+import { MY_EMAIL } from '~/constants';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RE_SEND_API_KEY);
 
 const schema = z.object({
-    firstName: z.string(),
-    lastName: z.string(),
+    firstName: z.string().trim().min(1, { message: "Required field" }),
+    lastName: z.string().trim().min(1, { message: "Required field" }),
     email: z.string().email(),
-    message: z.string(),
+    message: z.string().trim().min(1, { message: "Required field" }),
 })
 
-export async function contactMe(formData: FormData) {
+export async function contactMe(prevState: any, formData: FormData) {
+
     const validatedFields = schema.safeParse({
         firstName: formData.get('firstName'),
         lastName: formData.get('lastName'),
@@ -28,18 +30,19 @@ export async function contactMe(formData: FormData) {
         }
     }
 
+
     const { error, data } = await resend.batch.send([
         {
-            from: 'Acme <no-replay@mayar-deeb.dev>',
-            to: ['mayar.i.deeb@gmail.com'],
-            subject: `Website Form( ${formData.get('firstName')?.toString()}--${formData.get('lastName')?.toString()}--${formData.get('email')?.toString()} )`,
-            html: ` ${formData.get('message')?.toString()}`,
+            from: 'Website Form <no-replay@mayar-deeb.dev>',
+            to: [MY_EMAIL],
+            subject: `${validatedFields.data.firstName}-${validatedFields.data.lastName}::${validatedFields.data.email}`,
+            html: ` ${validatedFields.data.message}`,
         },
         {
-            from: 'Acme <no-replay@mayar-deeb.dev>',
-            to: [`${formData.get('email')?.toString()}`],
+            from: 'Mayar Deeb <no-replay@mayar-deeb.dev>',
+            to: [validatedFields.data.email],
             subject: 'Thank You for Reaching Out',
-            react: EmailTemplate({ firstName: formData.get('firstName') }) as React.ReactElement
+            react: EmailTemplate({ firstName: validatedFields.data.firstName }) as React.ReactElement
         },
     ]);
 
