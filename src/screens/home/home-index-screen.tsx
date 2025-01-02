@@ -3,9 +3,7 @@ import Companies from "./components/companies";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Resume from "./components/resume";
-import ContactForm from "./components/contact-form";
 import Tech from "./components/tech";
-
 
 export const HomeIndexScreen = () => {
     return (
@@ -16,7 +14,6 @@ export const HomeIndexScreen = () => {
             <Tech />
             <Projects />
             <Resume />
-            <ContactForm />
         </>
     );
 }

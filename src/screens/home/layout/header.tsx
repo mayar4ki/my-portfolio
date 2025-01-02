@@ -21,12 +21,12 @@ const NAV_MENU = [
   {
     name: "Projects",
     icon: RectangleStackIcon,
-    href: "projects"
+    href: "/#projects"
   },
   {
     name: "Skills",
     icon: CommandLineIcon,
-    href: "skills"
+    href: "/#skills"
   },
   {
     name: "Contact",
@@ -46,7 +46,7 @@ function NavItem({ children, href, onClick }: NavItemProps) {
     <li>
       <Typography
         as="a"
-        href={`/#${href}`}
+        href={href}
         onClick={onClick}
         variant="paragraph"
         color="gray"
