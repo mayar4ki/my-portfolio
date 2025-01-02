@@ -24,7 +24,9 @@ export const HomeLayout = ({
 }) => {
     return (
         <html lang="en">
-            <head>   </head>
+            <head>
+                <link rel="website icon" href="/favicon.ico" type="image/png" />
+            </head>
             <body className={font.className + font2.className} >
                 <ThemeProvider>
                     <Header />
