@@ -2,19 +2,20 @@
 
 import { z } from "zod";
 import OpenAI from "openai";
+import { gptOptions } from "~/constants/gptOptions";
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
 const schema = z.object({
+  previous_response_id: z.string().nullable(),
   message: z.string().trim().min(1, { message: "Required field" }),
 });
 
-const previous_response_id = null;
-
-export async function aiAssistant(prevState: any, formData: FormData) {
+export async function aiAssistant(formData: FormData) {
   const validatedFields = schema.safeParse({
+    previous_response_id: formData.get("previous_response_id"),
     message: formData.get("message"),
   });
 
@@ -25,12 +26,30 @@ export async function aiAssistant(prevState: any, formData: FormData) {
     };
   }
 
-  console.log(validatedFields.data.message);
+  const response = await openai.responses.create({
+    ...gptOptions,
 
-  //   const response = await openai.responses.create({
-  //     model: "gpt-4o",
-  //     input: "Write a one-sentence bedtime story about a unicorn.",
-  //   });
+    input: validatedFields.data.previous_response_id
+      ? validatedFields.data.message
+      : [
+          ...(gptOptions.input as any),
+          {
+            role: "user",
+            content: [
+              {
+                type: "input_text",
+                text: validatedFields.data.message,
+              },
+            ],
+          },
+        ],
 
-  //   console.log(response.output_text);
+    previous_response_id: validatedFields.data.previous_response_id,
+  });
+
+  if (response.error) {
+    throw new Error(`${response.error.code}: ${response.error.message}`);
+  }
+
+  return { id: response.id, message: response.output_text };
 }

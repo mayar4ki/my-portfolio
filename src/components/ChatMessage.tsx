@@ -1,5 +1,5 @@
 import { Typography } from "@material-tailwind/react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { concatMap, delay, from, of, Subscription } from "rxjs";
 
 export type ChatMessageProps = {
@@ -11,14 +11,19 @@ export type ChatMessageProps = {
 export const ChatMessage = (props: ChatMessageProps) => {
   const [txt, setTxt] = useState<string>("");
 
+  const boxRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     let sub: Subscription | null = null;
-
+    boxRef.current?.scrollIntoView({ behavior: "smooth" });
     if (props.sender === "model") {
       sub = from(props.message.split(""))
         .pipe(concatMap((x) => of(x).pipe(delay(35))))
         .subscribe({
-          next: (y) => setTxt((old) => old + y),
+          next: (y) => {
+            setTxt((old) => old + y);
+            boxRef.current?.scrollIntoView({ behavior: "smooth" });
+          },
         });
     }
     return () => {
@@ -27,6 +32,7 @@ export const ChatMessage = (props: ChatMessageProps) => {
   }, [props.message]);
   return (
     <div
+      ref={boxRef}
       className={` flex  ${
         props.sender === "model" ? "justify-start" : "justify-end"
       }  `}
