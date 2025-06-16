@@ -5,7 +5,7 @@ export const SOCIAL_LINKS = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/mayar-i-deeb/", icon: faLinkedin },
     { name: "Telegram", href: "https://t.me/M9321m", icon: faTelegram },
     { name: "WhatsApp", href: "https://wa.me/971568129757?text=Hey%20Mayar%20how%20you%20doing", icon: faWhatsapp },
-    { name: "Instagram", href: "https://www.instagram.com/mayar.alideeb/", icon: faInstagram },
+    { name: "Instagram", href: "https://www.instagram.com/mayar__deeb/", icon: faInstagram },
     { name: "Dev.to", href: "https://dev.to/chrollo4ki", icon: faDev },
     { name: "Medium", href: "https://medium.com/@mayardeeb", icon: faMedium }
 ];
