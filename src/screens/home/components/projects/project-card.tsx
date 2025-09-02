@@ -42,14 +42,11 @@ export function ProjectCard({ img, title, desc, href }: ProjectCardProps) {
         </Typography>
 
 
-        {href ? <Link href={href}>
+        {href && <Link href={href}>
           <Button color="gray" size="sm">
             see details
           </Button>
-        </Link> :
-          <Button disabled color="gray" size="sm">
-            Coming Soon
-          </Button>}
+        </Link>}
 
       </CardBody>
     </Card>

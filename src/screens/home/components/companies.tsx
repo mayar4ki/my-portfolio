@@ -4,10 +4,11 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const COMPANIES = [
+  "nextgen-blockchain",
   "alternativa",
   "copax",
   "unknown",
-  "claw-dev",
+  "claw-dev"
 ];
 
 export function Companies() {

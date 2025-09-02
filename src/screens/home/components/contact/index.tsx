@@ -18,16 +18,14 @@ import { contactMe } from '~/app/actions';
 import { useActionState } from 'react'
 
 
-
-export const ContactIndexScreen = () => {
-
+export const Contact = () => {
 
     const initialState = { errors: { email: [], firstName: [], lastName: [], message: [] } };
     const [state, formAction, pending] = useActionState(contactMe, initialState);
 
-
     return (
         <section className="px-8 py-16">
+            <a id="contact" className=" relative -top-24 invisible"></a>
             <div className="container mx-auto mb-8 text-center">
                 <Typography
                     variant="lead"

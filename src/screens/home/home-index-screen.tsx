@@ -4,6 +4,7 @@ import Skills from "./components/skills";
 import Projects from "./components/projects";
 import Resume from "./components/resume";
 import Tech from "./components/tech";
+import { Contact } from "./components/contact";
 
 export const HomeIndexScreen = () => {
     return (
@@ -14,6 +15,7 @@ export const HomeIndexScreen = () => {
             <Tech />
             <Projects />
             <Resume />
+            <Contact />
         </>
     );
 }

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
-const FRAMEWORKS = ["react", "next", "react-native"];
+const FRAMEWORKS = ["react", "next", "react-native", "vue", "nuxt"];
 
 const LIBS = [
   {
@@ -12,7 +12,7 @@ const LIBS = [
   },
   {
     title: "State Management",
-    values: ["Redux", "Redux-toolkit", "Zustand", "Context Api", "Rxjs"],
+    values: ["Redux", "Vuex", "Redux-toolkit", "pinia", "Zustand", "Context Api", "Rxjs"],
   },
   {
     title: "Maps",
@@ -27,6 +27,7 @@ const LIBS = [
       "Gluestack",
       "Native-base",
       "Tailwind",
+      "Mantine-ui"
     ],
   },
   {
@@ -35,7 +36,7 @@ const LIBS = [
       "Gluestack",
       "Native-base",
       "React Native Paper",
-      "shopify/restyle",
+      "shopify/restyle"
     ],
   },
   {
@@ -50,7 +51,11 @@ const LIBS = [
   },
   {
     title: "Auth",
-    values: ["Next-Auth", "Clerk", "Fire base", "JWT"],
+    values: ["Next-Auth", "Clerk", "Fire base", "JWT", "Wallet"],
+  },
+  {
+    title: "ًWeb3",
+    values: ["ethers.js", "viem", "wagmi", "chainlink/functions-toolkit", "Hardhat", "openzeppelin", "chain-link/contracts"],
   },
   {
     title: "Test",

@@ -28,6 +28,18 @@ const PROJECTS = [
     title: "Map Master",
     desc: "Open-Sourced project that gives you the ability to use multiple 2D and 3D maps in one place using Deck.gl and Mapbox, Google maps, OpenStreetMap,2Gis and more.",
     href: ''
+  },
+  {
+    img: "/image/eth.png",
+    title: "Future Prediction",
+    desc: "Future Prediction with Chain-link Oracle, Smart Contract, and Vue Nuxt front-end. AI-powered predictions on-chain. ai will decide what ever your prediction is right or not, sport, politic and more.",
+    href: ''
+  },
+  {
+    img: "/image/chain-link.png",
+    title: "Price Prediction",
+    desc: "BTC/USDT Price Prediction with Chain-link Oracle, Smart Contract, and React front-end.",
+    href: ''
   }
 ];
 

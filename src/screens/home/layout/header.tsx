@@ -31,7 +31,7 @@ const NAV_MENU = [
   {
     name: "Contact",
     icon: UserCircleIcon,
-    href: 'contact'
+    href: '/#contact'
   },
 ];
 
