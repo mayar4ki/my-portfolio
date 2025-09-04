@@ -14,7 +14,7 @@ const PROJECTS = [
     img: "/image/web3.png",
     title: "Stealth Startup, Services store",
     desc: "Service e-commerce platform that allows users to buy and sell services while focusing on anonymity and privacy.",
-    href: '/project/stealth-startup'
+    href: ''
 
   },
   {
